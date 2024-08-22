@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #fffdf6;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    background: black;
+    height: 3px;
+    width: 100%;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav {
+    display: none;
+    background: #fffdf6;
+    color: black;
+    position: fixed;
+    top: 40px; /* Adjust based on the height of your menu-toggle */
+    left: 0;
+    width: 200px;
+    z-index: 999; /* Ensure it stays below the menu toggle */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    padding: 15px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav.show {
+    display: block;
+}
+
+.content {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 200px; /* Adjust this value to move the text lower */
+}
+
+footer{
+    margin-top: 300px;
+}
+
+.logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-top: 20px;   /* Adjust the top margin if needed */
+}
+
+.logo-container img {
+    width: 100px;    /* Make sure the logo is responsive */
+    height: auto;
+}
+
+.image-container img {
+    height: auto;
+    width: 270px;
+}
+
+.image-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px; /* Adjust this value to move the container lower */
+  }
+  
+  .image-container {
+    flex-basis: 200px; /* Set the width of the image container */
+    margin-right: 10px; /* Add some space between the image and content */
+    margin-top: 220px;
+    margin-left: 200px;
+
+    border-radius: 5px;
+    background-color: #dfd3c3;
+    padding: 20px;
+  }
+  
+  .content {
+    flex: 1; /* Make the content take up the remaining space */
+  }

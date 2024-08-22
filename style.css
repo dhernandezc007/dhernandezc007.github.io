@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #fffdf6;
+    font-family: Arial, sans-serif;
+}
+
+.name-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sliding-name {
+    font-family: 'Times New Roman', serif;
+    font-size: 48px;
+    color: black;
+    white-space: nowrap;
+    transform: translateX(-100%);
+    animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.headings {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: black;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.images-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px;  /* Adds space outside the container */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+#home {
+    margin-bottom: 60px; /* Larger space below the home section */
+}
+
+#portfolio {
+    margin-bottom: 40px; /* Medium space below the portfolio section */
+}
+
+#portfolio2 {
+    margin-bottom: 20px; /* Smaller space below the contact section */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    background: black;
+    height: 3px;
+    width: 100%;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav {
+    display: none;
+    background: #fffdf6;
+    color: black;
+    position: fixed;
+    top: 40px; /* Adjust based on the height of your menu-toggle */
+    left: 0;
+    width: 200px;
+    z-index: 999; /* Ensure it stays below the menu toggle */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    padding: 15px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav.show {
+    display: block;
+}
+
+.logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-top: 20px;   /* Adjust the top margin if needed */
+}
+
+.logo-container img {
+    width: 100px;    /* Make sure the logo is responsive */
+    height: auto;
+}
+
+footer{
+    margin-top: 300px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styleC.css">
+</head>
+
+<header>
+    <div class="logo-container">
+        <img src="Images/logo-transparent-png.png" alt="Logo">
+    </div>
+</header>
+
+<body>
+    <div class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <h1>Contact</h1>
+        <p>Email: dhernandez11@my.dom.edu</p>
+
+        <p>You may also contact through: </p>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <footer style="background-color: #fffdf6; padding: 20px 0; text-align: center; font-family: Arial, sans-serif; width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <h4>&copy; 2024 Danny Hernandez. All rights reserved.</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><a href="https://www.linkedin.com/in/danny-hernandez-690a17261/" style="text-decoration: none; color: #38598b;">Linkedin</a></li>
+                        <li><a href="https://github.com/dhernandezc007" style="text-decoration: none; color: #38598b;">GitHub</a></li>
+                    </ul>
+                </div>
+    </footer>
+</body>
+</html>

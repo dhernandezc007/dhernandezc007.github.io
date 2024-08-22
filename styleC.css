@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #fffdf6;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    background: black;
+    height: 3px;
+    width: 100%;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav {
+    display: none;
+    background: #fffdf6;
+    color: black;
+    position: fixed;
+    top: 40px; /* Adjust based on the height of your menu-toggle */
+    left: 0;
+    width: 200px;
+    z-index: 999; /* Ensure it stays below the menu toggle */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    padding: 15px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav.show {
+    display: block;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #dfd3c3; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(47, 44, 44);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: black;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #dfd3c3;
+    padding: 20px;
+    margin-top: 200px;
+  }
+
+  footer{
+    margin-top: 300px;
+}
+
+.logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-top: 20px;   /* Adjust the top margin if needed */
+}
+
+.logo-container img {
+    width: 100px;    /* Make sure the logo is responsive */
+    height: auto;
+}
